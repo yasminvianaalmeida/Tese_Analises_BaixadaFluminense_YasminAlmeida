@@ -27,10 +27,7 @@ parametros/
 scripts/
   instrumentos/             Rotina do item 3.2
   ldo_loa/                  Rotina do item 3.3
-documentacao/
-  fluxograma.png            Percurso do procedimento de construção do código
-  Passo a Passo - *.pdf     Instruções originais de execução por linha de comando
-  README_*_original.md      Documentação original de cada rotina
+
 ```
 
 A planilha `Parametros_LDO_LOA.xlsx` é o núcleo metodológico: concentra o vocabulário de busca, as
