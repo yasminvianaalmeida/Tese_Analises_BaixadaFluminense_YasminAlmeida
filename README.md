@@ -77,20 +77,8 @@ As rotinas também podem ser executadas diretamente, sem a interface — ver
 
 Registradas aqui por transparência, para quem pretenda reproduzir ou auditar os resultados.
 
-**Reprodutibilidade dos resultados publicados.** A interface executa as três primeiras etapas da
-rotina de instrumentos (`analise_instrumentos.py` → `enhance.py` → `build_final.py`), que produzem a
-análise dos 33 documentos do corpus. Os resultados apresentados no item 4.3 da tese, porém,
-correspondem ao **corpus reprocessado de 31 instrumentos**, obtido com `reprocess.py`: ele exclui dois
-documentos considerados impróprios após a banca de qualificação, aplica os filtros de falso positivo e
-de cadastro fiscal fraco, deduplica repetições entre documentos e recalcula o Grau apenas com as
-ocorrências aproveitáveis dos instrumentos vigentes. O `reprocess.py` está disponível no menu
-*Ferramentas avançadas* da interface e depende de um arquivo de parâmetros complementar
-(`anexo_params.json`) definido após a qualificação.
-
 **Idioma do OCR.** Na rotina das LDO/LOA o idioma do reconhecimento óptico é lido da planilha de
-parâmetros (`IDIOMA_OCR`, definido como `por`). Na rotina dos instrumentos urbanísticos o valor
-originalmente fixado no código era `eng`; ele permanece como padrão para preservar a
-correspondência com os resultados publicados, mas é configurável na tela de parâmetros da interface.
+parâmetros (`IDIOMA_OCR`, definido como `por`). 
 
 **Corpo documental.** A rotina dos instrumentos identifica município e tipo de instrumento a partir do
 **nome de cada arquivo**, no formato `<Tipo> - <Município>.pdf` (por exemplo, `Plano Diretor - Japeri.pdf`).
@@ -108,8 +96,8 @@ As versões anteriores dos arquivos permanecem acessíveis no histórico de comm
 
 ## Como citar
 
-> ALMEIDA, Yasmin Viana. **[Título da tese]**. 2026. Tese (Doutorado em Geografia) —
-> [Instituição], [Cidade], 2026.
+> ALMEIDA, Yasmin Viana. **A institucionalização da geoinformação e suas assimetrias territoriais na gestão pública municipal da Baixada Fluminense Histórica**. 2026. Tese (Doutorado em Geografia) —
+> Universidade do Estado do Rio de Janeiro, Rio de Janeiro, 2026.
 
 ---
 
