@@ -3,13 +3,15 @@
 Códigos das análises documentais desenvolvidas na tese de doutorado de **Almeida, Yasmin Viana (2026)**,
 sobre a institucionalização da geoinformação na gestão pública municipal da Baixada Fluminense Histórica.
 
-O repositório reúne as duas rotinas de análise automatizada descritas no Capítulo 3 da tese, além de
-uma interface gráfica que permite executá-las sem edição do código-fonte.
+O repositório reúne a planilha de replicação do índice de consolidação da INDE (IC-INDE) e as duas rotinas de
+análise automatizada descritas no Capítulo 3 da tese, além de uma interface gráfica que permite executá-las
+sem edição do código-fonte.
 
 | Rotina | Item da tese | O que faz |
 |---|---|---|
 | **Instrumentos urbanísticos** | 3.2 | Lê os PDFs de CTM, Planta Genérica de Valores, Plano Diretor, Plano de Mobilidade, Plano de Saneamento e Plano Diretor de Tecnologia dos 8 municípios; mede o Grau de Integração Municipal da geoinformação. |
 | **LDO e LOA** | 3.3 | Lê os PDFs das Leis de Diretrizes Orçamentárias e Leis Orçamentárias Anuais, organizados em pastas por município; mede o Grau de Integração Orçamentária da geoinformação. |
+| **IC-INDE** | 3.1.1.3 e Apêndice F | Planilha com fórmulas que calcula o Índice de Consolidação da Infraestrutura de Dados Espaciais das entidades cadastradas na INDE; pesos, meia-vida e data de referência são editáveis. |
 
 Os **documentos analisados não estão neste repositório** — são documentos públicos, pesados, obtidos
 junto às prefeituras e aos diários oficiais. A composição do corpo documental está descrita nos itens
@@ -24,6 +26,9 @@ app.py                      Interface gráfica (executa as duas rotinas)
 requirements.txt            Bibliotecas Python necessárias
 parametros/
   Parametros_LDO_LOA.xlsx   Vocabulário, pesos, temas e rubrica (Anexos A, B e C da tese)
+ic-inde/
+  IC-INDE_Planilha_Replicacao.xlsx   Planilha de replicação do IC-INDE (item 3.1.1.3 e Apêndice F)
+  README.md                          Estrutura da planilha e instruções de uso
 scripts/
   instrumentos/             Rotina do item 3.2
   ldo_loa/                  Rotina do item 3.3
